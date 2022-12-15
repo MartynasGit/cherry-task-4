@@ -1,6 +1,6 @@
 <template>
     <div>
-<h1>Second form version</h1>
+<h1 class="text-5xl font-mono">Second form version</h1>
     </div>
 </template>
 
