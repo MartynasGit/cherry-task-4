@@ -10,6 +10,9 @@
                         <li>
                             <NuxtLink to="/second-version">Second version</NuxtLink>
                         </li>
+                        <li>
+                            <NuxtLink to="/task5">Task 5</NuxtLink>
+                        </li>
                     </ul>
                 </div>
             </nav>
