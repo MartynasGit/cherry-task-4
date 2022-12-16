@@ -1,18 +1,16 @@
 import { defineStore } from "pinia";
-
 export const useFormStore = defineStore("form", {
   state: () => {
-    return { data: {'name': '', 'email': '', 
-vehicle: [], },
-        storedData: [],
-     };
+    return {
+      submitedData: [],
+      nextId: 0,
+    };
   },
-  // could also be defined as
-  // state: () => ({ count: 0 })
   actions: {
-    addData() {
-      this.storedData.push(this.data);
-      this.data = [];
+    addData(data) {
+      this.submitedData.push({
+        info: [...data], id: this.nextId++
+      });
     },
   },
 });

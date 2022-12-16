@@ -49,9 +49,7 @@
                         </div>
                         <div class="form-floating my-3">
                             <textarea id="comment" name="w3review" rows="4" cols="50" v-model="comments"
-                                class="form-control">
-
-                            </textarea>
+                                class="form-control"></textarea>
                             <label for="comment" class="form-check font-bold">Comments:</label>
                         </div>
                     </div>
@@ -80,7 +78,7 @@ export default {
             email: '',
             vehicle: [],
             language: '',
-            carModel: '',
+            carModel: '', 
             comments: ''
         }
     }
