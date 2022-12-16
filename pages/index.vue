@@ -40,8 +40,9 @@
                         <div>
                             <label for="cars" class="font-bold form-check">Choose a car:</label>
                             <select name="cars" id="cars" v-model="carModel" class="form-select">
-                                <option value="Volvo">Volvo</option>
-                                <option value="Saab">Saab</option>
+                                <option disabled value="">Select your prefered car model</option>
+                                <option value="Lambo">Lambo</option>
+                                <option value="Bugatti">Bugatti</option>
                                 <option value="Mercedes">Mercedes</option>
                                 <option value="Audi">Audi</option>
                             </select>
