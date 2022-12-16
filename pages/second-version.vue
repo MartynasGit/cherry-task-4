@@ -4,13 +4,15 @@
         <div class="my-3 ">
             <Form></Form>
         </div>
-        <div>
-            <Table> </Table>
+        <div v-if="formData.submitedData.length !== 0">
+            <Table></Table>
         </div>
     </div>
 </template>
 
 <script setup>
+import { useFormStore } from '@/stores/form';
+const formData = useFormStore();
 </script>
 
 <style  scoped>

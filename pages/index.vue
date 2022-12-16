@@ -2,9 +2,9 @@
     <div>
         <h1 class="text-5xl font-mono">First form version</h1>
         <div class="flex">
-            <div class="my-5 col-8">
+            <div class="my-5 col-5">
                 <form>
-                    <div class="col-7">
+                    <div class="col-8">
                         <div class="my-2">
                             <label for="name" class="font-bold form-check">Your Name:</label>
                             <input type="text" v-model="name" id="name" class="form-control">

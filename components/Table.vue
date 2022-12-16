@@ -26,7 +26,7 @@
                     <td>{{ (item.language) }}</td>
                     <td>{{ (item.carModel) }}</td>
                     <td>{{ (item.comments) }}</td>
-                    <td><button class="btn btn-danger">Delete</button></td>
+                    <td><button class="btn btn-danger" @click="formData.delete(item.id)">Delete</button></td>
                 </tr>
             </tbody>
 

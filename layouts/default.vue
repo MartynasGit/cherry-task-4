@@ -1,9 +1,9 @@
 <template>
     <div class="sm:px-20 sm:py-2">
         <header>
-            <nav class=" mx-auto flex justify-between text-base p-3">
+            <nav class=" mx-auto flex justify-between text-base p-1 ">
                 <div>
-                    <ul class="flex sm:gap-2 gap-2 md:gap-8">
+                    <ul class="flex sm:gap-2 gap-2 md:gap-8 text-lg">
                         <li>
                             <NuxtLink to="/">First version </NuxtLink>
                         </li>
@@ -14,7 +14,7 @@
                 </div>
             </nav>
         </header>
-        <div class="p-2">
+        <div class="p-1">
             <slot></slot>
         </div>
     </div>

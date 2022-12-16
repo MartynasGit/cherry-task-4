@@ -10,8 +10,15 @@ export const useFormStore = defineStore("form", {
     addData(data) {
       this.submitedData.push({
         id: this.nextId++,
-        ...data
+        ...data,
       });
+    },
+    delete(givenItem) {
+      this.submitedData = this.submitedData.filter((item) => {
+        // console.log(item.id)
+        return item.id !== givenItem;
+      });
+      // console.log(givenItem)
     },
   },
 });
