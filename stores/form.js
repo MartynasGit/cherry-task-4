@@ -15,10 +15,8 @@ export const useFormStore = defineStore("form", {
     },
     delete(givenItem) {
       this.submitedData = this.submitedData.filter((item) => {
-        // console.log(item.id)
         return item.id !== givenItem;
       });
-      // console.log(givenItem)
     },
   },
 });

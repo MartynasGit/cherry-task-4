@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form @submit.prevent="handleSubmit(event)">
+        <form @submit.prevent="handleSubmit()">
             <div class="col-4">
                 <div class="my-2">
                     <label for="name" class="font-bold form-check">Your Name:</label>
@@ -69,9 +69,16 @@ let formInputData = ref({
     comments: "",
 });
 
-const handleSubmit = (event) => {
+const handleSubmit = () => {
     formData.addData(formInputData.value);
-    this.formInputData.name = "names"
+    formInputData.value = {
+        name: "",
+        email: "",
+        vehicle: [],
+        language: "",
+        carModel: "",
+        comments: "",
+    }
 }
 </script>
 
