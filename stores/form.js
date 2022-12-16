@@ -9,7 +9,8 @@ export const useFormStore = defineStore("form", {
   actions: {
     addData(data) {
       this.submitedData.push({
-        info: [...data], id: this.nextId++
+        id: this.nextId++,
+        ...data
       });
     },
   },

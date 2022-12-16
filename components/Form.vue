@@ -70,7 +70,9 @@ let formInputData = ref({
 });
 
 const handleSubmit = () => {
-    formData.addData(formInputData);
+    formData.addData(formInputData.value);
+    this.$refs.formInputData.reset();
+
 }
 </script>
 

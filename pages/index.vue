@@ -78,7 +78,7 @@ export default {
             email: '',
             vehicle: [],
             language: '',
-            carModel: '', 
+            carModel: '',
             comments: ''
         }
     }
