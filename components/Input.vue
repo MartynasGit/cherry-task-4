@@ -1,8 +1,8 @@
 <template>
     <div>
         <form @submit.prevent="handleSubmit()">
-            <div class="col-3 my-2">
-                <input type="text" class="form-control" required v-model="inputValue">
+            <div class="col-5 my-2">
+                <input type="text" class="form-control" required v-model="inputValue" placeholder="Your slug name here">
             </div>
             <button class="btn btn-success">Submit</button>
         </form>
