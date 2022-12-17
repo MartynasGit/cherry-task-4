@@ -1,21 +1,18 @@
 <template>
     <div>
         <h1 class="text-5xl font-mono mb-10">Task 5</h1>
-        <form @submit.prevent="">
-            <div class="col-3 my-2"><input type="text" class="form-control"></div>
+        <Input />
 
-            <button class="btn btn-success">Submit</button>
-        </form>
-
-        <table>
-
-        </table>
+        <ul v-for="i in formData.submitedData">
+            <li><NuxtLink :to="`/task5/${i.text}`">{{i.text}}</NuxtLink></li>
+        </ul>
     </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-let inputValues
+import { useInputStore } from '@/stores/slug-input';
+const formData = useInputStore();
+
 
 </script>
 
